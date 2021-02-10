@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="window">
+            <div class="header">
+                <h1 class="header__title">Giorni, luoghi e orari</h1>
+            </div>
+            <hr class="line">
+            <div class="description">
+                <p class="description__text">Quando si svolge il servizio</p>
+            </div>
+            <div>
+                <ul class="menu">
+                    <li class="item item__active"><a href="#" class="menu__link menu__active">Giorni</a></li>
+                    <li class="item"><a href="#" class="menu__link">In data</a></li>
+                </ul>
+                <ul class="menu__days">
+                    <li class="item__day day__active">Lu<input type="checkbox"></li>
+                    <li class="item__day day__active"><input type="checkbox">Ma</li>
+                    <li class="item__day day__active"><input type="checkbox">Me</li>
+                    <li class="item__day day__active"><input type="checkbox">Gi</li>
+                    <li class="item__day day__active"><input type="checkbox">Ve</li>
+                    <li class="item__day"><input type="checkbox">Sa</li>
+                    <li class="item__day"><input type="checkbox">Do</li>
+                </ul>
+                <p class="text">Orario di partenza da Cervinia o incontro</p>
+                <div class="time">
+                    <div class="time__from">
+                        <label for="dalle"></label>
+                        <select name="dalle" id="dalle" class="from__select">
+                            <option value="15:00" class="option__111"><span class="span__111">dalle</span> 15:00</option>
+                            <option value="16:00">dalle 16:00</option>
+                            <option value="17:00">dalle 17:00</option>
+                        </select>
+                    </div>
+                    <div class="time__to">
+                        <label for="alle"></label>
+                        <select name="alle" id="alle" class="to__select">
+                            <option value="18:00">alle 18:00</option>
+                            <option value="19:00">alle 19:00</option>
+                            <option value="20:00">alle 20:00</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="text text__map">Luogo di partenza o incontro con i clienti</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.886572890782!2d7.6270178154173225!3d45.933566779109285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4788cce9e4500f93%3A0xd28ce47f4248a333!2sCervinia%20Valtournenche!5e0!3m2!1sen!2sru!4v1612855054384!5m2!1sen!2sru" width="345" height="95" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="buttons">
+                    <div class="btn__add-wrp">
+                        <button class="btn__add">Aggiungi</button>
+                    </div>
+                    <div class="btn__done-wrp">
+                        <button class="btn_done">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
