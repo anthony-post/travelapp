@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/custom_select.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="window">
+            <div class="header">
+                <h1 class="header__title">Giorni, luoghi e orari</h1>
+            </div>
+            <hr class="line">
+            <div class="description">
+                <p class="description__text">Quando si svolge il servizio</p>
+            </div>
+            <div>
+                <div class="tabs">
+                    <input class="input__btn" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                    <label for="tab-btn-1">Giorni</label>
+                    <input class="input__btn" type="radio" name="tab-btn" id="tab-btn-2" value="">
+                    <label for="tab-btn-2">In data</label>
+                
+                    <div id="content-1">
+                        <ul class="menu__days">
+                            <li class="item__day day__active">Lu<input type="checkbox"></li>
+                            <li class="item__day day__active"><input type="checkbox">Ma</li>
+                            <li class="item__day day__active"><input type="checkbox">Me</li>
+                            <li class="item__day day__active"><input type="checkbox">Gi</li>
+                            <li class="item__day day__active"><input type="checkbox">Ve</li>
+                            <li class="item__day"><input type="checkbox">Sa</li>
+                            <li class="item__day"><input type="checkbox">Do</li>
+                        </ul>
+                    </div>
+                    <div id="content-2">
+                        
+                        <div class="text2">
+                            Seleziona la data dell'evento
+                        </div>
+                        <!-- <p class="text2">Seleziona la data dell'evento</p> -->
+                        <div class="select" id="select-1">
+                            <div class="select__backdrop" data-select="backdrop"></div>
+
+                            <button type="button" class="select__trigger" data-select="trigger">22.12.2020</button>
+
+                            <div class="select__dropdown">
+                                    <ul class="select__items">
+                                        <li class="select__item" data-select="item">21.12.2020</li>
+                                        <li class="select__item select__item_selected" data-select="item">22.12.2020</li>
+                                        <li class="select__item" data-select="item">23.12.2020</li>
+                                        <li class="select__item" data-select="item">24.12.2020</li>
+                                        <li class="select__item" data-select="item">25.12.2020</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="date"> -->
+                                        <!-- <label for="start"></label>
+                                        <input type="date" id="start" name="trip-start" value="2020-12-22"> -->
+                            <!-- <label for="date"></label>
+                            <select name="date" id="date" class="date__select">
+                                <option value="2020.12.22">2020.12.22</option>
+                            </select>
+                        </div> -->
+                    </div>
+                </div>
+                <p class="text">Orario di partenza da Cervinia o incontro</p>
+                <div class="time">
+                    <div class="select" id="select-2">
+                        <div class="select__backdrop" data-select="backdrop"></div>
+
+                        <button type="button" class="select__trigger trigger" data-select="trigger"><span class="select__item__text">dalle</span>15:00</button>
+
+                        <div class="select__dropdown">
+                                <ul class="select__items">
+                                    <li class="select__item select__item_selected" data-select="item">15:00</li>
+                                    <li class="select__item" data-select="item">16:00</li>
+                                    <li class="select__item" data-select="item">17:00</li>
+                                    <li class="select__item" data-select="item">18:00</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="time__from">
+                        <label for="dalle"></label>
+                        <select name="dalle" id="dalle" class="select">
+                            <option value="15:00" class="option__111"><span class="span__111">dalle</span> 15:00</option>
+                            <option value="16:00">dalle 16:00</option>
+                            <option value="17:00">dalle 17:00</option>
+                        </select>
+                    </div> -->
+                    <div class="select" id="select-3">
+                        <div class="select__backdrop" data-select="backdrop"></div>
+
+                        <button type="button" class="select__trigger trigger" data-select="trigger"><span class="select__item__text">dalle</span>18:00</button>
+
+                        <div class="select__dropdown">
+                                <ul class="select__items">
+                                    <li class="select__item select__item_selected" data-select="item">18:00</li>
+                                    <li class="select__item" data-select="item">19:00</li>
+                                    <li class="select__item" data-select="item">20:00</li>
+                                    <li class="select__item" data-select="item">21:00</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="time__to">
+                        <label for="alle"></label>
+                        <select name="alle" id="alle" class="select">
+                            <option value="18:00">alle 18:00</option>
+                            <option value="19:00">alle 19:00</option>
+                            <option value="20:00">alle 20:00</option>
+                        </select>
+                    </div> -->
+                </div>
+                
+                <p class="text text__map">Luogo di partenza o incontro con i clienti</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2774.886572890782!2d7.6270178154173225!3d45.933566779109285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4788cce9e4500f93%3A0xd28ce47f4248a333!2sCervinia%20Valtournenche!5e0!3m2!1sen!2sru!4v1612855054384!5m2!1sen!2sru" width="345" height="95" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="buttons">
+                    <div class="btn__add-wrp">
+                        <button class="btn__add">Aggiungi</button>
+                    </div>
+                    <div class="btn__done-wrp">
+                        <button class="btn_done">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Подключаем js-файл CustomSelect -->
+     <script src="js/custom_select.js"></script>
+     <script>
+        const select1 = new CustomSelect('#select-1');
+        const select2 = new CustomSelect('#select-2');
+        const select3 = new CustomSelect('#select-3');
+    </script>
+                
+     <!-- JS код в котором инициализируем экземпляр CustomSelect для .select
+    <script>
+       const select1 = new CustomSelect('.select', {
+         defaultValue: 'Ford',
+         data: ['Volkswagen', 'Ford', 'Toyota', 'Nissan'],
+         onSelected(item) {
+           console.log(`Выбранное значение: ${item.textContent}`);
+         },
+       });
+   
+       document.querySelector('.select').addEventListener('select.change', (e) => {
+         console.log(
+           `Выбранное значение: ${
+           e.target.querySelector('.select__item_selected').textContent
+           }`
+         );
+       });
+    </script> -->
+
+</body>
+</html>
